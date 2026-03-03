@@ -7,7 +7,7 @@ import "net/http"
 // https://zhuanlan.zhihu.com/p/335165168
 func SetSecureHeader(w http.ResponseWriter) {
 	// Content-Length Date 默认已经存在
-	w.Header().Set("Server", "AnyLinkOpenSource")
+	// w.Header().Set("Server", "AnyLinkOpenSource")
 	// w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	// w.Header().Set("Transfer-Encoding", "chunked")
 	w.Header().Set("X-Aggregate-Auth", "1")
